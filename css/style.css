@@ -882,3 +882,159 @@ section h2 {
         font-size: 36px;
     }
 }
+
+
+/* ===========================
+   SOCIAL PROOF SECTION
+   =========================== */
+
+.social-proof {
+    background-color: white;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: var(--bg-light);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border-left: 4px solid var(--primary-color);
+}
+
+.testimonial-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-5px);
+}
+
+.stars {
+    font-size: 18px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.testimonial-text {
+    font-size: 15px;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-color);
+}
+
+.author-info {
+    flex: 1;
+}
+
+.author-name {
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 2px;
+}
+
+.author-role {
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+/* ===========================
+   PRICE BREAKDOWN & URGENCY
+   =========================== */
+
+.price-breakdown {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.price-item.subtotal {
+    border-bottom: none;
+    padding-top: 15px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.item-name {
+    font-size: 15px;
+}
+
+.item-price {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.price-highlight {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.discount-label {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+.savings {
+    font-size: 16px;
+    font-weight: 700;
+    color: #10b981;
+    margin-top: 15px;
+}
+
+.urgency-box {
+    background: linear-gradient(135deg, rgba(245, 87, 108, 0.15), rgba(102, 126, 234, 0.15));
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.urgency-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.urgency-text {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.urgency-sublabel {
+    color: var(--accent-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.stock-count {
+    font-weight: 800;
+    font-size: 16px;
+    color: #10b981;
+}
